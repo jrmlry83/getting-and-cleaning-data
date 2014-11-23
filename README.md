@@ -53,7 +53,7 @@ This produces a text file in the working directory called _"tidydataset.txt"_
 
 **The text file produced at the end of the script, as required for the project can be read again with the following commands in R**
 
-data <- read.table("tidydataset.txt", header = TRUE)
+data <- read.table("tidydataset.txt", header = TRUE);
 View(data)
 
 END
