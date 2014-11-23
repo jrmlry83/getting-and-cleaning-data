@@ -1,9 +1,11 @@
 getting-and-cleaning-data
 =========================
 
-Getting and Cleaning Data Course Project
+#Getting and Cleaning Data Course Project
 
 The run_analysis.R file in this directory was created for the Getting and Cleaning Data Course Project. Instructions on how the file can be run and how it meets the project requirements are detailed in this readMe.
+
+##Running the script
 
 To run the script:
 1. Download the data from the following link
@@ -15,6 +17,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The script loads the relevant data from the dataset into the workspace and provides appropriate column names for the data. The matching was done in accordance with the documentation from the original UCI HAR Dataset.
 
+##Project Requirements
 
 The project requirements are discussed below:
 
@@ -44,11 +47,11 @@ e: Direction (as per Direction in Codebook.md)
 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Through use of the tidyr package, the data set is tidied in accordance with the requirements outlined in "Tidy Data" by Hadley Wickham (available at http://vita.had.co.nz/papers/tidy-data.pdf). 
+Through use of the tidyr package, the data set is tidied in accordance with the requirements outlined in _"Tidy Data"_ by Hadley Wickham (available at http://vita.had.co.nz/papers/tidy-data.pdf). The long form is used, and is also considered tidy as per the cited paper.
 
-This produces a text file in the working directory called "tidydataset.txt"
+This produces a text file in the working directory called _"tidydataset.txt"_
 
-The text file produced at the end of the script, as required for the project can be read again with the following commands in R
+**The text file produced at the end of the script, as required for the project can be read again with the following commands in R**
 
 data <- read.table("tidydataset.txt", header = TRUE)
 View(data)
