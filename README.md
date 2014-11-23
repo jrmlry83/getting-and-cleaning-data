@@ -40,9 +40,13 @@ The activity labels from the original dataset were extracted and replaced their 
 The dataset was labelled before Part 1, to facilitate the merging of the data sets. In this part, the labels are cleaned up (errors existed originally) and split into 5 different parts, separated by underscores. The format of each label is as follows (a_b_c_d_e).
 
 a: Domain (as per Domain in Codebook.md)
+
 b: Component (as per Component in Codebook.md)
+
 c: Signal (as per Signal in Codebook.md)
+
 d: Statistic (either the Mean or the Standard Deviation (Std), used to calculate the average subsequently)
+
 e: Direction (as per Direction in Codebook.md)
 
 ###5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
