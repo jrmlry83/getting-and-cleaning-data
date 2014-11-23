@@ -65,5 +65,8 @@ names(selectset) <- gsub("fBody","f_Body_",names(selectset),fixed=TRUE)
 longset <- melt(selectset,c("Subject","Activity"),variable.name="Signal")
 longset <- group_by(longset,Subject,Activity,Signal)
 averageset <- ungroup(summarise(longset,average=mean(value)))
-tidy <- separate(averageset,Signal, into = c("Domain","Force","Signal","Statistic","Direction"))
-write.table(tidy,file="tidydataset.txt")
+separateset <- separate(averageset,Signal, into = c("Domain","Component","Signal","Statistic","Direction"))
+tidyset <- spread(separateset,Statistic,average)
+names(tidyset)[7] <- "average Mean"
+names(tidyset)[8] <- "average Std"
+write.table(tidyset,file="tidydataset.txt")
