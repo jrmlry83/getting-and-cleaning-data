@@ -18,36 +18,36 @@ The data was normalised from [-1,1] and all values are thus unitless, but it is 
 ##Table Variables
 
 1. Subject: Each test subject was labelled with a different label
-* 1-30
+	* 1-30
 
 2. Activity: The 6 activities that each subject was asked to perform, with self-explanatory labels
-* WALKING
-* WALKING_UPSTAIRS
-* WALKING_DOWNSTAIRS
-* SITTING
-* STANDING
-* LAYING
+	* WALKING
+	* WALKING_UPSTAIRS
+	* WALKING_DOWNSTAIRS
+	* SITTING
+	* STANDING
+	* LAYING
 
 3. Domain: The domain in which the signals are being evaluated
-* t - time domain signals
-* f - frequency domain signals, after an FFT was applied to the time domain signals
+	* t - time domain signals
+	* f - frequency domain signals, after an FFT was applied to the time domain signals
 
 4. Component: The accelerometer signals were attributed to either body movements or gravity
-* Body - signals attributed to body movement
-* Gravity - signals attributed to gravity
+	* Body - signals attributed to body movement
+	* Gravity - signals attributed to gravity
 
 
 5. Signal: States the kind of signal being measured. There are 4 different types.
-* Acc - directly from accelerometer data
-* AccJerk - body linear acceleration was derived in time to produce accelerometer jerk signals
-* Gyro - directly from gyroscope data
-* GyroJerk - angular velocity was derived in time to produce gyroscope jerk signals
+	* Acc - directly from accelerometer data
+	* AccJerk - body linear acceleration was derived in time to produce accelerometer jerk signals
+	* Gyro - directly from gyroscope data
+	* GyroJerk - angular velocity was derived in time to produce gyroscope jerk signals
 
 6. Direction: The accelerometer and gyroscope data were collected in three axes, and the magnitude was also calculated
-* X - X-axis
-* Y - Y-axis
-* Z - Z-axis
-* Mag - Magnitude of the signal, i.e. sqrt(x^2 + y^2 + z^2)
+	* X - X-axis
+	* Y - Y-axis
+	* Z - Z-axis
+	* Mag - Magnitude of the signal, i.e. sqrt(x^2 + y^2 + z^2)
 
 ##Table Values
 
