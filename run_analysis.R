@@ -29,8 +29,7 @@ names(strain) <- "Subject"
 trainset <- cbind (strain,ytrain,xtrain)
 testset <- cbind (stest,ytest,xtest)
 fullset <- rbind(testset,trainset)
-#cbind subject with y with x. include labels first
-#rbind test and train sets
+
 
 #Part 2
 
@@ -69,4 +68,4 @@ separateset <- separate(averageset,Signal, into = c("Domain","Component","Signal
 tidyset <- spread(separateset,Statistic,average)
 names(tidyset)[7] <- "average Mean"
 names(tidyset)[8] <- "average Std"
-write.table(tidyset,file="tidydataset.txt")
+write.table(tidyset,file="tidydataset.txt",row.names = FALSE)

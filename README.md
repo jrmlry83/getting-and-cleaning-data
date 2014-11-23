@@ -46,6 +46,8 @@ e: Direction (as per Direction in Codebook.md)
 
 Through use of the tidyr package, the data set is tidied in accordance with the requirements outlined in "Tidy Data" by Hadley Wickham (available at http://vita.had.co.nz/papers/tidy-data.pdf). 
 
+This produces a text file in the working directory called "tidydataset.txt"
+
 The text file produced at the end of the script, as required for the project can be read again with the following commands in R
 
 data <- read.table("tidydataset.txt", header = TRUE)
